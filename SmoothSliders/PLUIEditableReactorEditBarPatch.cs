@@ -1,12 +1,12 @@
 ﻿using HarmonyLib;
-
+using PulsarModLoader;
 
 namespace SmoothSliders
 {
     [HarmonyPatch(typeof(PLUIEditableReactorEditBar), "ApplyStepping")]
     internal class PLUIEditableReactorEditBarPatch
     {
-        public static bool SmoothSlidersEnabled = true;
+        public static SaveValue<bool> SmoothSlidersEnabled = new SaveValue<bool>("SmoothSlidersEnabled", true);
 
         public static void Prefix(out float __state, float inFloat)
         {

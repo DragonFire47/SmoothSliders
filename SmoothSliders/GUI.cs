@@ -12,7 +12,7 @@ namespace SmoothSliders
             bool flag = GUILayout.Button(text, Array.Empty<GUILayoutOption>());
             if (flag)
             {
-                PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled = !PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled;
+                PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled.Value = !PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled.Value;
             }
         }
 
