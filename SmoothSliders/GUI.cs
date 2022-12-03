@@ -8,7 +8,7 @@ namespace SmoothSliders
     {
         public override void Draw()
         {
-            string text = "Smooth Sliders is now " + (PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled ? "Enabled" : "Disabled");
+            string text = "Smooth Sliders " + (PLUIEditableReactorEditBarPatch.SmoothSlidersEnabled ? "Enabled" : "Disabled");
             bool flag = GUILayout.Button(text, Array.Empty<GUILayoutOption>());
             if (flag)
             {
