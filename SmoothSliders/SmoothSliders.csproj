@@ -32,9 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GUI.cs" />
-    <Compile Include="LoadFromXMLPatch.cs" />
-    <Compile Include="PLInGameUIPatch.cs" />
-    <Compile Include="PLInputPatch.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PLUIEditableReactorEditBarPatch.cs" />
